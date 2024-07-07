@@ -1,0 +1,3 @@
+function usclick() {
+	alert("cum")
+}

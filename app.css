@@ -1,0 +1,11 @@
+h1 {
+	color: lightpink;
+	font-family: consolas;
+	font-size: 100px;
+	font-weight: lighter;
+	letter-spacing: 5px;
+	text-align: center;
+}
+body {
+	background-color: black;
+}
