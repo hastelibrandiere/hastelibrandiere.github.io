@@ -1,3 +1,8 @@
+.bytesized-regular {
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 body{
 	background-color: black;
 	background-image: url(content/GraffitiBG.webp);
@@ -5,124 +10,35 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 	margin: 0px;
-}
-.bytesized-regular {
-  font-family: "Bytesized", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.logo{
-	color: white;
-	margin-top: 0.5em;
-	position: absolute;
-	top: 0px;
-	font-family: Bytesized;
-}
-nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
 	font-family: sans-serif;
-	color: white;
-	margin: 0px;
-	position: absolute;
-	top: 0.5em;
-	left: 73em;
-	text-wrap: nowrap;	
-}
-.tenor-gif-embed{
-	color: black;
+	text-wrap: nowrap;
 }
 header{
 	width: 90%;
 	max-width: 80em;
 	margin-inline: auto;
-	margin-bottom: 3em;
-	position: relative;
-	height: 2em;
-}
-button{
-	background-color: transparent;
-	border: none;
-	font-family: Bytesized;
-	font-size: 1em;
-	float: right;
-	cursor: pointer;
-}
-#dancing-konata{
-	filter: brightness(0);
-}
-button:hover{
-	color: darkred;
-}
-button:active{
-	color: black;
-}
-.material-symbols-outlined:hover{
-	border-color: darkred;
-	background-color: darkred;
-}
-.hypertext:hover{
-	border-color: darkred;
-	background-color: darkred;
-}
-.custn{
-	font-family: Bytesized;
-	font-size: 1.25em;
-	float: left;
-	margin-left: 0.15em;
-}
-#sec0{
-	margin-bottom: 5em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20em;
-	visibility: visible;
-}
-.custh{
-	font-size: 2em;
-	text-align: center;
-	font-family: sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin-top: 0.5em;
-	margin-bottom: 0px;
+	margin-bottom: 0.5em;
 }
-p{
-	font-size: 1em;
-	font-weight: bold;
-	text-align: justify;
-	font-family: sans-serif;
-	padding-left: 2em;
-	padding-right: 2em;
+.logo{
+	color: white;
+	font-family: Bytesized;
+	margin: 0px;
 }
-#sec1{
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 5em;
-	width: 50em;
-	visibility: visible;
+nav{
+	color: white;
 }
-#sec2{
-	margin-left: auto;
-	margin-right: auto;
-	width: 25em;
-	visibility: visible;
-}
-#qr-code{
-	margin-top: 1em;
-}
-main{
-	margin-bottom: 5em;
-}
-footer{
-	padding: 0.5em;
-	background-color: white;
-	font-size: 1em;
-	font-weight: bold;
-	font-family: sans-serif;
-	text-align: center;
-}
-.custw{
-	padding: 0.2em;
-	background-color: white;
-	box-shadow: 0.2em 0.2em 0px black, 0.4em 0.4em 0px white;
-	text-align: center;
+a{
+	text-decoration: none;
+	color: white;
+	text-shadow: 0px 0px 0.1em white;
 }
 .material-symbols-outlined{
 	border-style: solid;
@@ -130,8 +46,71 @@ footer{
 	border-color: black;
 	background-color: black;
 	padding: 0.5em;
+	transition: border-color 0.1s, background-color 0.1s;
 }
-.hypertext{
+.material-symbols-outlined:hover{
+	border-color: darkred;
+	background-color: darkred;
+}
+.block-window{
+	padding: 0.2em;
+	background-color: white;
+	box-shadow: 0.2em 0.2em 0px black, 0.4em 0.4em 0px white;
+	text-align: center;
+}
+.window-name{
+	font-family: Bytesized;
+	font-size: 1.25em;
+	margin-left: 0.15em;
+	position: absolute;
+	left: 0.25em;
+	top: 0px;
+}
+button{
+	background-color: transparent;
+	border: none;
+	font-family: Bytesized;
+	font-size: 1em;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+button:hover{
+	color: darkred;
+}
+button:active{
+	color: black;
+}
+.window-header{
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0.75em;
+	margin-bottom: 0px;
+}
+p{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: justify;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-wrap: wrap;
+}
+.sections{
+	margin-inline: auto;
+	margin-bottom: 5em;
+	position: relative;
+}
+.window1{
+	max-width: 20em;
+}
+.window2{
+	max-width: 50em;
+}
+.window3{
+	max-width: 25em;
+}
+.hyper-text{
 	border-style: solid;
 	border-radius: 2em;
 	border-color: black;
@@ -142,11 +121,38 @@ footer{
 	font-family: Bytesized;
 	font-size: 2em;
 	font-weight: bold;
+	position: absolute;
+	top: 1.5em;
+	left: 3.685em;
+	transition: border-color 0.1s, background-color 0.1s;
 }
-a{
-	text-decoration: none;
-	color: white;
-	text-shadow: 0px 0px 0.1em white;
+.hyper-text:hover{
+	border-color: darkred;
+	background-color: darkred;
+}
+#qr-code{
+	margin-top: 6.5em;
+}
+footer{
+	padding: 0.5em;
+	background-color: white;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+#dancing-konata{
+	filter: brightness(0);
+}
+.credits{
+	text-align: center;
+}
+.mask-scroll{
+	width: 90%;
+	max-width: 80em;
+	height: 1em;
+	margin-inline: auto;
+	position: relative;
+	overflow: hidden;
 }
 .scroll{
 	position: absolute;
@@ -155,23 +161,11 @@ a{
 	animation-duration: 60s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	text-wrap: nowrap;
-}
-.credits{
-	text-align: center;
 }
 @keyframes leftscroll{
 	to{
 		left: -15em;
 	}
-}
-.scrollmask{
-	width: 90%;
-	max-width: 80em;
-	height: 1em;
-	margin-inline: auto;
-	position: relative;
-	overflow: hidden;
 }
 .item1{
 	animation-delay: calc(60s / 8 * (8 - 1) * -1);
